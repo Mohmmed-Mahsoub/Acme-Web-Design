@@ -1,0 +1,196 @@
+body {
+    font:15px/1.5 Arial,Helvetica ,Sans-serif ;
+    background-color: #f4f4f4;
+}
+
+/* Start global*/
+.container {
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+ul { /*reset*/
+    padding:0;
+    /*margin:0*/
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*End global*/
+
+/* Start heder */
+header {
+    background-color: #35424a;
+    color:#fff;
+    border-bottom: 3px solid #e8491d;
+    min-height: 70px;
+}
+header #brand {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 18px;
+}
+header nav ul li {
+    list-style: none;
+    display: inline;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+header #brand .highlight , header ul .current a{
+    color:#e8491d;
+}
+
+/* End heder */
+
+/* Start intro */
+#intro {
+    min-height: 400px;
+    background: url("../images/showcase.jpg") no-repeat 0 -400px;
+    text-align: center;
+    color:#fff;
+}
+#intro h1 {
+    font-size: 55px;
+    margin-top: 80px;
+}
+#intro p {
+    font-size: 19px;
+}
+.dark {
+    background-color:#35424a;
+    color: #fff;
+    padding:10px;
+}
+/* End intro */
+
+/*Start Newsletter*/
+#newsletter {
+    background-color: #35424a;
+    color: #fff;
+}
+#newsletter h2 {
+    float:left;
+}
+#newsletter form {
+    float:right;
+    margin-top: 20px;
+}
+#newsletter form input[type="email"] {
+    padding: 5px 10px;
+}
+#newsletter form button[type="submit"] {
+    padding: 7px 15px;
+    background-color: #e8491d;
+    border: none;
+    color: #fff;
+}
+/*End Newsletter*/
+
+/* Start skills */
+#boxes {
+    margin-top: 30px;
+}
+#boxes .box {
+    float:left;
+    width: 33.3333%;
+    text-align: center;
+    padding: 0 10px;
+}
+#boxes .box img {
+    width:100px;
+}
+/* End skills*/
+
+/* Start bout us*/
+#main {
+    margin:20px 0;
+}
+#main #main-col {
+    float: left;
+    width: 65%;
+}
+#main #main-col h3 {
+    margin-top: 0;
+}
+#main #sidebar {
+    float: right;
+    width: 30%
+}
+
+/* End about us */
+
+/* Start services*/
+#main #main-col #services h2 {
+    margin-top: 0;
+}
+#main #main-col #services .item {
+    background-color: #e6e6e6;
+    padding:20px;
+    margin-bottom: 4px;
+}
+#main #sidebar .quate input, #main #sidebar .quate textarea {
+    width:90%;
+    padding:5px;
+}
+#main #sidebar button[type="submit"] {
+    padding: 7px 15px;
+    background-color: #e8491d;
+    border: none;
+    color: #fff;
+}
+/* End services*/
+
+/*Start footer*/
+footer {
+    background-color: #e8491d;
+    color:#fff;
+    text-align:center;
+    padding: 20px;
+}
+/*End footer*/
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #brand, header nav {
+        float:none;
+        text-align: center;
+    }
+    #intro h1 {
+        margin-top: 40px;
+    }
+    #newsletter h2, #newsletter form {
+        float:none;
+        text-align: center;
+    }
+    #boxes .box {
+        float:none;
+        width:100%;
+    }
+    #main #main-col, #main #sidebar {
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    #newsletter form input[type="email"],#newsletter form button[type="submit"] {
+        display: block;
+        width:100%;
+        margin-bottom: 5px;
+    }
+    #main #sidebar button[type="submit"] {
+        width:90%;
+    }
+}
